@@ -1,0 +1,32 @@
+:root { font-family: Inter, Arial, sans-serif; color: #172033; background: #f3f6fb; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input { font: inherit; }
+.container { max-width: 960px; margin: 38px auto; padding: 0 20px; }
+.top, section { background: white; border: 1px solid #e6ebf2; border-radius: 16px; padding: 25px; margin-bottom: 18px; box-shadow: 0 8px 24px rgba(26, 45, 75, .05); }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.eyebrow { color: #2874c8; font-size: 11px; letter-spacing: 1.5px; font-weight: 800; }
+h1 { margin: 7px 0; font-size: 30px; }
+h2 { font-size: 19px; margin: 0 0 18px; }
+p { color: #647087; line-height: 1.5; }
+.roles { font-size: 13px; }
+button { border: 0; border-radius: 9px; padding: 11px 16px; background: #1768ac; color: white; cursor: pointer; font-weight: 650; }
+button:hover { filter: brightness(.94); }
+button:disabled { opacity: .6; cursor: wait; }
+button.secondary { background: #eaf2fb; color: #175b98; }
+button.danger { background: #b83b4b; }
+.create-form { display: flex; gap: 10px; }
+input { flex: 1; min-width: 0; border: 1px solid #d8e0eb; border-radius: 9px; padding: 12px; outline-color: #1768ac; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; }
+.section-heading span { color: #718097; font-size: 13px; }
+.request { display: flex; justify-content: space-between; align-items: center; gap: 15px; padding: 15px 0; border-top: 1px solid #edf0f5; }
+.request p { margin: 6px 0 0; font-size: 13px; }
+.status { display: inline-block; border-radius: 30px; padding: 4px 9px; font-size: 11px; font-weight: 800; background: #fff3d8; color: #946200; }
+.status.validee { background: #e3f7ed; color: #187447; }
+.status.refusee { background: #fde8eb; color: #a72b3c; }
+.actions { display: flex; gap: 7px; flex-wrap: wrap; justify-content: flex-end; }
+.actions button { font-size: 12px; padding: 9px 12px; }
+.hint, .empty { font-size: 13px; }
+.message { background: #eaf2fb; color: #175b98; padding: 13px 16px; border-radius: 9px; }
+footer { text-align: center; color: #929bad; font-size: 12px; padding: 18px; }
+@media (max-width: 650px) { .top { align-items: flex-start; flex-direction: column; } .create-form { flex-direction: column; } .request { align-items: flex-start; flex-direction: column; } .actions { justify-content: flex-start; } }
